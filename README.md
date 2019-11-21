@@ -17,8 +17,7 @@ A Spigot plugin that connects the Minecraft in-game chat and a GroupMe group.
 - Admins looking to manage a secondary chat channel that interacts with the Minecraft chat
 
 ### Example Screenshots
-![GroupMe integration example screenshots](screenshots/chat-example.png "Minecraft-GroupMe Examples (GroupMe Chat)")
-
+![GroupMe integration example screenshots](images/chat-example.png "Minecraft-GroupMe Examples (GroupMe Chat)")
 
 # Requirements
 Minecraft-GroupMe is designed for Spigot 1.14.4, and has not been tested on any earlier versions.
@@ -44,7 +43,18 @@ in the configuration file, set the port, for example: `port: 1025`
 ## 3. Configure the GroupMe Bot.
 
 1. Log into the GroupMe developer portal: https://dev.groupme.com/
-2. Choose the group the bot will send/receive messages in.
+2. Click "Create Bot" to create a new bot integration.
+3. Choose the group the bot will send/receive messages in. 
+4. Give the bot a name, for example _"MC"_.
+5. For the Callback Url, enter the server IP and port with _http://_ protocol, for example: _http://127.0.0.1:1024_
+6. For the Avatar URL, set an image URL. An example image is provided on this repository (`images/steve.png`) but you will need to upload the image at a hosting service somewhere to set the avatar.
+7. Submit, and copy "Bot ID". Add this ID to the configuration, for example: `groupme_bot_id: a1b2c3d4e5f6g7h8`
+
+![Steve head](images/steve.png "Steve")
+
+Reload the plugin and you should be ready! Try sending a message in GroupMe, and verify it shows up in Minecraft. Then, try sending a message in Minecraft, and verify it shows in GroupMe. 
+
+If you have trouble, open a Github issue!
 
 # Configuration Options
 
