@@ -1,0 +1,8 @@
+name: MineChatSpigot
+version: 1.0
+author: Chris Dalke
+main: MineChatSpigot
+commands:
+  minechat:
+    description: Enables or disables MineChat.
+    usage: /minechat <enable/disable>
