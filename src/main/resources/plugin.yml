@@ -1,0 +1,8 @@
+name: MinecraftGroupmeChatPlugin
+version: 1.0.0
+author: Chris Dalke
+main: MinecraftGroupmeChatPlugin
+commands:
+  minechat:
+    description: Enables or disables Minecraft-Groupme Chat.
+    usage: /minechat <enable/disable>
