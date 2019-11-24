@@ -1,7 +1,7 @@
 name: MinecraftGroupmeChatPlugin
 version: 1.0.0
 author: Chris Dalke
-main: MinecraftGroupmeChatPlugin
+main: com.chrisdalke.minechat.MinecraftGroupmeChatPlugin
 commands:
   minechat:
     description: Enables or disables Minecraft-Groupme Chat.
