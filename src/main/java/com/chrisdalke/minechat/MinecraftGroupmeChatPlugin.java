@@ -29,10 +29,11 @@ public class MinecraftGroupmeChatPlugin extends JavaPlugin implements Listener,C
     public static final String CONFIG_MESSAGES_CHAT = "messages_chat";
 
     // Instance member variables
-    @Getter
     private Logger logger;
+
     @Getter
-    private FileConfiguration configFile = getConfig();
+    private FileConfiguration configFile;
+
     private Bot groupmeBot;
     private WebhookServerRunnable webhookServerInstance;
     private BukkitTask webhookServerTask;
@@ -43,10 +44,12 @@ public class MinecraftGroupmeChatPlugin extends JavaPlugin implements Listener,C
      */
     @Override
     public void onEnable(){
+        try {
         logger = getLogger();
         logger.info("Initializing Minecraft-GroupMe Chat plugin...");
 
         // Create default configuration
+        configFile = getConfig();
         configFile.addDefault(CONFIG_BOT_ID,"none");
         configFile.addDefault(CONFIG_SERVER_PORT,0);
         configFile.addDefault(CONFIG_MESSAGES_JOIN_LEAVE,false);
@@ -71,6 +74,12 @@ public class MinecraftGroupmeChatPlugin extends JavaPlugin implements Listener,C
 
         // Register this class as an event handler for player events
         getServer().getPluginManager().registerEvents(this, this);
+
+        } catch (Exception e){
+            logger.severe("Failed to initialized groupme chat plugin");
+            e.printStackTrace();
+            throw e;
+        }
     }
 
     /**
