@@ -63,3 +63,4 @@ If you have trouble, open a Github issue!
 - `messages_join_leave`: _Boolean (true/false)_, Whether join/leave messages will be sent to GroupMe.
 - `messages_death`: _Boolean (true/false)_, whether death messages will be sent to GroupMe.
 - `messages_chat`: _Boolean (true/false)_, whether chat messages will be sent to GroupMe.
+
