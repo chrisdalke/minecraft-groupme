@@ -1,4 +1,4 @@
-# Minecraft-GroupMe
+# Chunkchat
 
 ### What is this?
 A Spigot plugin that connects the Minecraft in-game chat and a GroupMe group. 
