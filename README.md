@@ -1,5 +1,7 @@
 # Minecraft GroupMe Bridge
 
+**Note: This plugin is not maintained and will likely not work without modifications on a modern Minecraft server.**
+
 ### What is this?
 A Spigot plugin that connects the Minecraft in-game chat and a GroupMe group. 
 - Display player chat, join/leave messages, and death messages in GroupMe. 
