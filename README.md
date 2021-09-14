@@ -1,4 +1,4 @@
-# Chunkchat
+# Minecraft GroupMe Bridge
 
 ### What is this?
 A Spigot plugin that connects the Minecraft in-game chat and a GroupMe group. 
